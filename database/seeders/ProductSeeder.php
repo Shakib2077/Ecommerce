@@ -22,14 +22,14 @@ class ProductSeeder extends Seeder
                 'gallery' => 'https://www.lg.com/levant_en/images/mobile-phones/MD05997279/MD05997280/gallery/medium01.jpg',
             ],
             [
-                'name' => '12 5G Mobile',
+                'name' => 'Xioami12 5G Mobile',
                 'price' => '40000',
                 'description' => 'a 5g mobile',
                 'category' => '5g Mobile',
                 'gallery' => 'https://www.bouyguestelecom.fr/media/catalog/product//x/i/xiaomi-12-5g-violet-face.png',
             ],
             [
-                'name' => 'Xioami redmi 12',
+                'name' => 'Xioami Redmi 12',
                 'price' => '320000',
                 'description' => 'a xioami redmi 12 mobile blauw',
                 'category' => 'Xioami Mobile',
