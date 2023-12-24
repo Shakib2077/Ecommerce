@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    function index(){
+    function index()
+    {
         return "Welcome to product Page";
     }
 }
