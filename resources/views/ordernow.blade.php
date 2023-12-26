@@ -24,15 +24,16 @@
     </tbody>
   </table>
 
-        <form>
+        <form method="POST" action="orderplace">
+          @csrf
         <div class="form-group">
-            <textarea class="form-control" ></textarea>
+            <textarea placeholder="Enter your address" name="address" class="form-control"></textarea>
         </div>
         <div class="form-group">
             <label for="">Payment Method</label>
-            <p><input type="radio" name="payment"><span> Visa Card Payment</span></p>
-            <p><input type="radio" name="payment"><span> Bkash/Nagad/Rocket</span></p>
-            <p><input type="radio" name="payment"><span> Cash On Delivery</span></p>
+            <p><input type="radio" value="card" name="payment"><span> Visa Card Payment</span></p>
+            <p><input type="radio" value="Bkash/Nagad" name="payment"><span> Mobile Banking</span></p>
+            <p><input type="radio" value="cash" name="payment"><span> Cash On Delivery</span></p>
         </div>
         <button type="submit" class="btn btn-danger">order Now</button>
         </form>
