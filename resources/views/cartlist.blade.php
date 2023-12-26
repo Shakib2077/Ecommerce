@@ -17,15 +17,16 @@
 
                         <div class="col-sm-3">
                                     <div class="">
-                                            <h2>{{$item->name}}</h2>
-                                            <h5>{{$item->description}}</h5>
+                                            <h3>{{$item->name}}</h3>
+                                            <h4>{{$item->description}}</h4>
                                     </div>
                         </div>
 
-                        <div class="col-sm-3">
-                                <button class="btn btn-warning">Remove From Cart</button>
+                            <div class="col-sm-3">
+                                <a href="/removecart/{{$item->cart_id}}" class="btn btn-warning">Remove From Cart</a>
+                            </div>
                         </div>
-                      </div>
+
                     @endforeach
                 </div>
         </div>
