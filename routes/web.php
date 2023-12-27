@@ -15,15 +15,23 @@ use App\Http\Controllers\ProductController;
 |
 */
 
+// Route::get('/login', function(){
+//     return redirect('login');
+// });
+
 Route::get('/logout', function () {
     Session::forget('user');
     return redirect('/login');
 });
 
 
-Route::view("login", "login");
+// Route::view("login", "login");
+
+// Route::view("register", "register");
 
 Route::post("/login", [UserController::class, 'login']);
+
+Route::post("/register", [UserController::class, 'register']);
 
 Route::get("/", [ProductController::class, 'index']);
 
@@ -41,4 +49,4 @@ Route::get("ordernow", [ProductController::class, 'orderNow']);
 
 Route::post("orderplace", [ProductController::class, 'orderPlace']);
 
-ROute::get("myorders", [ProductController::class, 'myOrders']);
+Route::get("myorders", [ProductController::class, 'myOrders']);

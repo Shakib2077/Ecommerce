@@ -1,5 +1,5 @@
 @extends('master')
-<!-- @section('content') -->
+@section('content')
 
 <div class="custom-product">
     <div class="col-sm-10">
@@ -31,5 +31,5 @@
         </div>
     </div>
 </div>
-<!-- @endsection  -->
+@endsection 
 
