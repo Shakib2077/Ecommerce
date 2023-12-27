@@ -4,7 +4,7 @@
 <div class="custom-product">
     <div class="col-sm-10">
         <div class="trending-wrapper">
-            <h2>My Orders</h2>
+            <h2>My Orders</h2><br><br>
                 <div class="carousel-inner">
                     @foreach($orders as $order)
                     <div class="row searched-item cart-list-devider">

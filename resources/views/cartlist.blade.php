@@ -5,7 +5,7 @@
     <div class="col-sm-10">
         <div class="trending-wrapper">
             <h2>Cart List</h2>
-                <a class="btn btn-danger" href="/ordernow">Order Now</a><br><br>
+                <a class="btn btn-warning" href="/ordernow">Order Now</a><br><br>
                 <div class="carousel-inner">
                     @foreach($products as $item)
                     <div class="row searched-item cart-list-devider">
@@ -25,7 +25,7 @@
                         </div>
 
                         <div class="col-sm-3">
-                            <a href="/removecart/{{$item->cart_id}}" class="btn btn-warning">Remove From Cart</a>
+                            <a href="/removecart/{{$item->cart_id}}" class="btn btn-danger">Remove From Cart</a>
                         </div>
                     </div>
 
