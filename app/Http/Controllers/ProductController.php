@@ -8,7 +8,6 @@ use App\Models\Cart;
 use App\Models\Order;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
-// use Session;
 
 
 class ProductController extends Controller
@@ -27,8 +26,8 @@ class ProductController extends Controller
     {
         $data= Product::
         where('name', 'like', '%' . $req->input('search'). '%')
-        ->get();
-        return view('search',['products'=>$data]);
+            ->get();
+            return view('search',['products'=>$data]);
     }
     function addTocart(Request $req)
     {
@@ -55,10 +54,10 @@ class ProductController extends Controller
     {
         $userId = session('user')['id'];
         $data= DB::table('cart')
-        ->join('products', 'cart.product_id', '=', 'products.id')
-        ->select('products.*' ,'cart.id as cart_id')
-        ->where('cart.user_id', $userId)
-        ->get();
+            ->join('products', 'cart.product_id', '=', 'products.id')
+            ->select('products.*' ,'cart.id as cart_id')
+            ->where('cart.user_id', $userId)
+            ->get();
 
         return view('cartlist', ['products'=>$data]);
     }
@@ -71,9 +70,9 @@ class ProductController extends Controller
     {
         $userId = session('user')['id'];
         $total =  DB::table('cart')
-        ->join('products', 'cart.product_id', '=', 'products.id')
-        ->where('cart.user_id', $userId)
-        ->sum('products.price');
+            ->join('products', 'cart.product_id', '=', 'products.id')
+            ->where('cart.user_id', $userId)
+            ->sum('products.price');
 
         return view('ordernow', ['total' =>$total]);
     }
@@ -95,6 +94,15 @@ class ProductController extends Controller
         }
         Cart::where('user_id',$userId)->delete();
         return redirect('/');
-        // return $req->input();
+    }
+    function myOrders()
+    {
+        $userId = session('user')['id'];
+        $orders= DB::table('orders')
+            ->join('products', 'orders.product_id', '=', 'products.id')
+            ->where('orders.user_id', $userId)
+            ->get();
+
+        return view('myorders', ['orders' =>$orders]);
     }
 }

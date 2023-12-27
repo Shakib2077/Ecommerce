@@ -15,7 +15,7 @@ class ProductSeeder extends Seeder
     {
         DB::table('products')->insert([
             [
-                'name' => 'LG Mobile',
+                'name' => 'Vivo Mobile',
                 'price' => '10000',
                 'description' => 'a little mobile',
                 'category' => 'mobile',

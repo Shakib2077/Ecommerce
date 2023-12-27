@@ -11,15 +11,15 @@
       </tr>
       <tr>
         <td>Tax</td>
-        <td>{{$total * 2 / 100}}TK</td>
+        <td>{{$total * 1 / 100}}TK</td>
       </tr>
       <tr>
         <td>Delivary Charge</td>
-        <td>{{$total * 0.3 / 100}}</td>
+        <td>{{$total * 0.3 / 100}}TK </td>
       </tr>
       <tr>
         <td>Total Payble Amount</td>
-        <td>{{$total+($total * 2 / 100)+($total * 0.3 / 100)}}</td>
+        <td>{{$total+($total * 1 / 100)+($total * 0.3 / 100)}}TK</td>
       </tr>
     </tbody>
   </table>
