@@ -6,22 +6,22 @@
         <div class="trending-wrapper">
             <h2>My Orders</h2>
                 <div class="carousel-inner">
-                    @foreach($orders as $item)
+                    @foreach($orders as $order)
                     <div class="row searched-item cart-list-devider">
 
                         <div class="col-sm-3">
-                            <a href="detail/{{$item->id}}">
-                                <img class="trending-img" src="{{$item->gallery}}">
+                            <a href="detail/{{$order->id}}">
+                                <img class="trending-img" src="{{$order->gallery}}">
                             </a>
                         </div>
 
                         <div class="col-sm-3">
                             <div class="row">
-                                <h3>Name: {{$item->name}}</h3>
-                                <h4>Delivery Status: {{$item->status}}</h4>
-                                <h4>Address: {{$item->address}}</h4>
-                                <h4>Payment Status: {{$item->payment_status}}</h4>
-                                <h4>Payment Method: {{$item->payment_method}}</h4>
+                                <h3>Name: {{$order->name}}</h3>
+                                <h4>Delivery Status: {{$order->status}}</h4>
+                                <h4>Address: {{$order->address}}</h4>
+                                <h4>Payment Status: {{$order->payment_status}}</h4>
+                                <h4>Payment Method: {{$order->payment_method}}</h4>
                             </div>
                         </div>
                     </div>
