@@ -16,6 +16,7 @@
                             </a>
                         </div>
 
+                        
                         <div class="col-sm-3">
                             <div class="row">
                                 <h3>Name: {{$order->name}}</h3>

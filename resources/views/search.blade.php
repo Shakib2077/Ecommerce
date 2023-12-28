@@ -15,11 +15,11 @@
                 <div class="searched-item cart-list-devider">
                         <a href="detail/{{$item['id']}}">
                         <img class="trending-img" src="{{$item['gallery']}}">
-                        <div class="">
+                        <!-- <div class=""> -->
                             <h3>Name: {{$item['name']}}</h3>
                             <h4>Description: {{$item['description']}}</h4>
                             <h4>Price: {{$item['price']}}</h4>
-                        </div>
+                        <!-- </div> -->
                         </a>
                     </div>
                 @endforeach

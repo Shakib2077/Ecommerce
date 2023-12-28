@@ -14,7 +14,7 @@ if (Session::has('user')) {
 
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -32,7 +32,7 @@ if (Session::has('user')) {
       
       <form action="/search" class="navbar-form navbar-left">
         <div class="form-group">
-          <input type="text" name="search" class="form-control search-box" placeholder="Search">
+          <input type="text" name="search" class="form-control search-box" placeholder="Search Item">
         </div>
         <button type="submit" class="btn btn-default">Search</button>
       </form>
@@ -47,7 +47,9 @@ if (Session::has('user')) {
       </li>
       @else
       <li><a href="/login">Login</a></li>
+      
       <li><a href="/register">Register</a></li>
+      
       @endif
       </li>
       </ul>

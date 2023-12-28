@@ -26,7 +26,6 @@
                 @endforeach
             </div>
 
-
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
                 <span class="sr-only">Previous</span>
@@ -36,7 +35,7 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        
+   
         <div class="trending-wrapper">
             <h1>Trending Product</h1>
             <div class="carousel-inner">
@@ -47,6 +46,7 @@
                         <div class="">
                             <h3>{{$item['name']}}</h3>
                             <h4>{{$item['price']}}TK</h4>
+                            <h4>{{$item['description']}}</h4>
                         </div>
                         </a>
                     </div>
