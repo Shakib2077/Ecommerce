@@ -10,9 +10,9 @@ if (Session::has('user')) {
 
 ?>
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
+<nav class="navbar" style="background-color: #e3f2fd;">
 
+  <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -20,7 +20,7 @@ if (Session::has('user')) {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">E-Com</a>
+      <a class="navbar-brand" href="/">E-CoM</a>
     </div>
 
 
@@ -28,8 +28,8 @@ if (Session::has('user')) {
       <ul class="nav navbar-nav">
         <li class="active"><a href="/">Home</a></li>
         <li class="active"><a href="/myorders">Orders</a></li>
-   
       </ul>
+      
       <form action="/search" class="navbar-form navbar-left">
         <div class="form-group">
           <input type="text" name="search" class="form-control search-box" placeholder="Search">
