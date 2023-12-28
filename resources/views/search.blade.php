@@ -5,7 +5,7 @@
 <div class="container">
 <div class="custom-product">
     <div class="col-sm-4">
-        <a class="btn btn-success" href="/">Go Back</a><br><br>
+    <a class="btn btn-success" href="/">Go Back</a><br><br>
     </div>
     <div>
     <div class="trending-wrapper">
